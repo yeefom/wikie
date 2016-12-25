@@ -1,0 +1,25 @@
+{
+  "name": "wikie",
+  "version": "0.0.1",
+  "description": "Explore random Wikipedia items and save for later",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeefom/wikie.git"
+  },
+  "author": "Yifeng Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeefom/wikie/issues"
+  },
+  "homepage": "https://github.com/yeefom/wikie#readme",
+  "devDependencies": {
+    "morgan": "^1.7.0"
+  },
+  "dependencies": {
+    "pg": "^6.1.2"
+  }
+}
