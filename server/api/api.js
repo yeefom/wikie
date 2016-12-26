@@ -1,7 +1,10 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const db = require('../utils/dbUtils');
 
 const router = express.Router();
+
+router.use(bodyParser.json());
 
 router.get('/bookmarks', (req, res) => {
   db.query('SELECT * FROM bookmarks').then(data => {
