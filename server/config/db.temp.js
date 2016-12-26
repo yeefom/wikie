@@ -1,12 +1,14 @@
 const pg = require('pg');
 const config = {
-    database : 'wikie',
-    user : '',
-    password: '',
-    host : '',
-    port: 5432,
-    max: 10,
-    idleTimeoutMillis: 30000
+  database : 'wikie',
+  user : '',
+  password: '',
+  host : '',
+  port: 5432,
+  max: 10,
+  idleTimeoutMillis: 30000
 };
 
-module.exports = new pg.Pool(config);
+const pool = new pg.Pool(config);
+
+module.exports = pool;
