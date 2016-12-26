@@ -13,7 +13,14 @@ router.get('/bookmarks', (req, res) => {
 });
 
 router.post('/bookmarks', (req, res) => {
-  res.send('bookmark saved');
+  const {url, title} = req.body;
+
+  db.query(`INSERT INTO bookmarks (url, title) VALUES ('${url}', '${title}')`).then(() => {
+    res.sendStatus(201);
+  }).catch(err => {
+    console.error('error posting bookmarks', err);
+    res.sendStatus(500);
+  });
 });
 
 module.exports = router;
