@@ -18,4 +18,4 @@ Explore random Wikipedia items and save for later
 
 **Production mode**: `build` command bundles static files with optimizations for production. Static files are served directly from the server.
 
-**Development mode**: server only serve as API service. Static files are served via `webpack-dev-server`, which provides many benefits including hot module reload.
+**Development mode**: server only serves as API service. Static files are served via `webpack-dev-server`, which provides many benefits including hot module reload.
