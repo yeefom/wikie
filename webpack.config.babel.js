@@ -32,11 +32,11 @@ const sourceMap = isProduction ? 'cheap-module-source-map' : 'cheap-module-eval-
 
 const config = {
   entry: [
-    path.join(__dirname, '/client/app.js')
+    path.join(__dirname, '/client/index.js')
   ],
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'app_bundle.js'
+    filename: 'index_bundle.js'
   },
   module: {
     loaders: [{
