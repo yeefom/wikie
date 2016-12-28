@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Routes from './config/Routes';
 
 ReactDOM.render(
-  <div>hello wikie</div>,
+  <Routes/>,
   document.getElementById('app')
 );
