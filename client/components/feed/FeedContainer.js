@@ -1,9 +1,10 @@
 import React, {Component, PropTypes} from 'react';
+import Feed from './Feed';
 
 class FeedContainer extends Component {
   render() {
     return (
-      <div>feed</div>
+      <Feed/>
     );
   }
 }
