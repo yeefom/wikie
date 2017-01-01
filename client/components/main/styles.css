@@ -1,0 +1,8 @@
+.bodyContainer {
+  margin: 0 auto;
+  max-width: 37.5rem;
+}
+
+.bodyContainer > h1 {
+  text-align: center;
+}
