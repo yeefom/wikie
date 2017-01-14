@@ -28,10 +28,11 @@ const DevPlugins = [
 ];
 
 const plugins = isProduction ? ProdPlugins : DevPlugins;
-const sourceMap = isProduction ? 'cheap-module-source-map' : 'cheap-module-eval-source-map';
+const sourceMap = isProduction ? 'cheap-module-source-map' : 'cheap-module-inline-source-map';
 
 const config = {
   entry: [
+    'babel-polyfill',
     path.join(__dirname, '/client/index.js')
   ],
   output: {

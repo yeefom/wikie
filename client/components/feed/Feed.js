@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 
-export default function Feed({feed}) {
+export default function Feed({feed, onClick}) {
   return (
-    <div>feed</div>
+    <div onClick={onClick}>{feed}</div>
   );
 }
