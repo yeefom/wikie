@@ -6,8 +6,8 @@ function* fetchFeatured() {
   const res = yield call(callFeaturedService);
 
   yield put({
-    type: 'FETCH_FEATURED_SUCCESS',
-    tfa: res.data.tfa
+    type: 'FETCH_ITEMS_SUCCESS',
+    items: {tfa: [res.data.tfa]}
   });
 
   // todo handle error

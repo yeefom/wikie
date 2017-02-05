@@ -5,11 +5,15 @@ import Feed from './Feed';
 import * as feedActions from '../../actions/feedActions';
 
 class FeedContainer extends Component {
+  static propTypes = {
+    feed: PropTypes.object.isRequired
+  }
+
   render() {
     return (
       <Feed
         feed={this.props.feed}
-        onClick={this.props.fetchFeatured}
+        fetchFeatured={this.props.fetchFeatured}
       />
     );
   }
