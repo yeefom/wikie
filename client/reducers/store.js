@@ -2,7 +2,7 @@ import {createStore, combineReducers, applyMiddleware} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import feed from './feed';
 import bookmarks from './bookmarks';
-import wikiApi from '../sagas/wikiApi';
+import wikiSaga from '../sagas/wikiSaga';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -11,6 +11,6 @@ const store = createStore(
   applyMiddleware(sagaMiddleware)
 );
 
-sagaMiddleware.run(wikiApi);
+sagaMiddleware.run(wikiSaga);
 
 export default store;
