@@ -1,3 +1,5 @@
+import {FETCH_ITEMS_SUCCESS} from '../config/constants';
+
 // itemGroups = {group: [{title: ''}]}
 function normalizeItems(itemGroups) {
   const normalized = {};
@@ -13,7 +15,7 @@ function normalizeItems(itemGroups) {
 
 export default function items(state = {}, action) {
   switch (action.type) {
-    case 'FETCH_ITEMS_SUCCESS':
+    case FETCH_ITEMS_SUCCESS:
       return {
         ...state,
         ...normalizeItems(action.items)

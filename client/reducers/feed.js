@@ -1,3 +1,5 @@
+import {FETCH_ITEMS_SUCCESS} from '../config/constants';
+
 // itemGroups = {group: [{title: ''}]}
 function parseGroups(itemGroups) {
   return Object.keys(itemGroups).reduce((groups, group) => {
@@ -8,7 +10,7 @@ function parseGroups(itemGroups) {
 
 export default function feed(state = {}, action) {
   switch (action.type) {
-    case 'FETCH_ITEMS_SUCCESS':
+    case FETCH_ITEMS_SUCCESS:
       return {
         ...state,
         ...parseGroups(action.items)
