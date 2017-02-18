@@ -2,14 +2,12 @@ import React, {PropTypes} from 'react';
 import ItemContainer from '../item/ItemContainer';
 
 Feed.propTypes = {
-  feed: PropTypes.object.isRequired,
-  fetchFeatured: PropTypes.func.isRequired
+  feed: PropTypes.object.isRequired
 };
 
-export default function Feed({feed, fetchFeatured}) {
+export default function Feed({feed}) {
   return (
     <div>
-      <div onClick={fetchFeatured}>fetch featured</div>
       {
         feed.tfa && feed.tfa.length > 0
           ? feed.tfa.map((itemKey, index) =>

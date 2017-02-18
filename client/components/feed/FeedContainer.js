@@ -9,11 +9,14 @@ class FeedContainer extends Component {
     feed: PropTypes.object.isRequired
   }
 
+  componentDidMount() {
+    this.props.fetchFeatured()
+  }
+
   render() {
     return (
       <Feed
         feed={this.props.feed}
-        fetchFeatured={this.props.fetchFeatured}
       />
     );
   }

@@ -22,7 +22,8 @@ function mapStateToProps({items}, props) {
   return {
     title: itemData.normalizedtitle,
     url: itemData.title,
-    excerpt: itemData.extract
+    excerpt: itemData.extract,
+    thumbnail: itemData.thumbnail.source
   };
 }
 
