@@ -1,0 +1,21 @@
+@value variables: "../../styles/variables.css";
+@value light-gray from variables;
+
+.itemContainer {
+  border-bottom: 1px solid light-gray;
+  padding: 1rem 0.5rem;
+}
+
+.itemContainer {
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+.itemTitle {
+  padding-bottom: 0.5rem;
+}
+
+.itemExcerpt {
+  padding-top: 0.75rem;
+}

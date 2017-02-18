@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react';
+import {itemContainer, itemTitle, itemExcerpt} from './styles.css';
 
 item.propTypes = {
   title: PropTypes.string.isRequired,
@@ -10,10 +11,9 @@ export default function item({title, url, excerpt}) {
   const fullUrl = `https://en.wikipedia.org/wiki/${url}`;
 
   return (
-    <div>
-      <div>{title}</div>
-      <a href={fullUrl}>{fullUrl}</a>
-      <div>{excerpt}</div>
+    <div className={itemContainer}>
+      <a href={fullUrl} className={itemTitle}>{title}</a>
+      <div className={itemExcerpt}>{excerpt}</div>
     </div>
   );
 }
