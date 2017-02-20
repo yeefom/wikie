@@ -4,9 +4,7 @@
 .itemContainer {
   border-bottom: 1px solid light-gray;
   padding: 1rem 0.5rem;
-}
 
-.itemContainer {
   a {
     font-size: 0.8rem;
   }
