@@ -8,7 +8,7 @@ function* fetchFeatured() {
 
   yield put({
     type: FETCH_ITEMS_SUCCESS,
-    items: {tfa: [res.data.tfa]}
+    items: {mostread: res.data.mostread.articles}
   });
 
   // todo handle error

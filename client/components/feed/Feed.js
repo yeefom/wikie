@@ -9,8 +9,8 @@ export default function Feed({feed}) {
   return (
     <div>
       {
-        feed.tfa && feed.tfa.length > 0
-          ? feed.tfa.map((itemKey, index) =>
+        feed.mostread && feed.mostread.length > 0
+          ? feed.mostread.map((itemKey, index) =>
               <ItemContainer
                 key={index}
                 itemKey={itemKey}
